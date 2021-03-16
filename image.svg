@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1000" height="1000">
+	<defs>
+		<g>
+			<ellipse rx="50" ry="15" id="shadow" fill="#000" opacity="0.2"/>
+		</g>
+		<g>
+			 <circle r="100" cx="100" cy="100" id="body"/>
+		</g>
+		<g>
+			<ellipse rx="17" ry="9" id="mouth" fill="red"/>
+		</g>
+		<g>
+			<polygon points="5,25 25,5  50,25" id="hear" stroke="orange" stroke-width="4px" fill="#000" transform="rotate(-30)"/>
+		</g>
+		<symbol id="eyes">
+			<circle r="45" cx="90" cy="45" fill="#fff"/>
+			<circle r="8" cx="100" cy="45" fill="#000"/>
+			<circle r="45" cx="45" cy="45" fill="#fff"/>
+			<circle r="8" cx="55" cy="45" fill="#000"/>
+		</symbol>
+		<symbol id="tail">
+			<ellipse rx="55" ry="20" cx="60" cy="20" fill="orange"/>
+			<polygon points='1,25 15,1 29,25'  fill="#fff" transform="rotate(-90 20 15)"/>
+		</symbol>
+		<symbol id="hears">
+			<use xlink:href="#hear" x="115" y="112" />
+			<use xlink:href="#hear" x="135" y="100" transform="rotate(50 200 180)"/>
+		</symbol>
+	</defs>
+	<!--колобок №1-->
+	<use xlink:href="#shadow" x="300" y="300"/>
+    <use xlink:href="#body" x="200" y="100" fill="orange"/>
+    <use xlink:href="#eyes" x="250" y="135"/>
+	<use xlink:href="#hears" x="100" y="0"/>
+	<circle r="12" cx="325" cy="225" fill="#000"/>
+	<use xlink:href="#mouth" x="305" y="255"/>
+    <use xlink:href="#tail" x="140" y="210" transform="rotate(15 200 100)"/>
+
+    <!--колобок №2--> 
+    <use xlink:href="#shadow" x="600" y="300"/>
+    <use xlink:href="#body" x="500" y="100" fill="gold"/>
+    <use xlink:href="#eyes" x="550" y="135" transform="rotate(180 600 180)"/>
+	<use xlink:href="#mouth" x="580" y="255" transform="rotate(90 580 255)"/>
+</svg>
